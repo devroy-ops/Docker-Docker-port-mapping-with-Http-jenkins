@@ -1,0 +1,24 @@
+    1  yum update -y
+    2  yum install docker -y
+    5  service docker start
+    6  service docker status
+    7  ls
+    8  docker run -td --name techserver -p 80:80 ubuntu
+    9  docker ps
+   10  docker port techserver
+   11  docker exec -it techserver /bin/bash
+   12    Apt-get update
+   13  apt-get install apache2
+   14    Asia(select area)
+   15    time-kolkata(select name)
+   16  cd /var/www/html 
+   17    echo "test my webpage" >index.html 
+   18   service apache2 restart
+ Note:paste webpage in browser 
+ 
+   1  docker run -td --name myjenkins -p 8080:8080 jenkins/jenkins     
+   
+   
+
+Note:-Add port-8080 in securiry group for jenkins
+NOte:-publicip:8080 (enter)
